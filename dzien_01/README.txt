@@ -184,3 +184,46 @@ Cena paliwa: 7.25
 Spalanie na 100 km: 10
 
 Koszt przejazdu Warszawa-Gdańsk to 304.50 PLN
+
+### Wyrażenia warunkowe
+
+------------------------
+if <warunek>:
+    # ciało ifa
+	print("wewnątrz if")
+	
+print("poza ifem")
+	
+--------------------------
+if <warunek>:
+    # ciało ifa
+	print("wewnątrz if")
+else:
+	print("wewnątrz else")
+
+print("poza ifem")
+
+-------------------------
+
+if <warunek>:
+    # ciało ifa
+	print("wewnątrz if")
+elif <warunek2>:
+	print("wewnątrz elif")
+<...>
+elif <warunekn>:
+	print("wewnątrz n elif")
+else:
+	print("wewnątrz else")
+
+print("poza ifem")
+
+
+----------------------
+
+
+
+###zad
+
+napisz program, który pobierze od użytkownika rok urodzenia
+i wypisze czy użytkownik jest pełnoletni czy nie.
