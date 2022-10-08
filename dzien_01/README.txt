@@ -172,3 +172,15 @@ https://peps.python.org/pep-0008/
 
 Napisz program, który pobierze od użytkownika dane i wyliczy jego współczynnik BMI
 
+### Zadanie
+
+Napisz program, który obluczy koszty przejazdu z miasta A do B
+
+
+Miasta A: Warszawa
+Miasto B: Gdańsk
+Dystans Warszawa-Gdańsk: 420
+Cena paliwa: 7.25
+Spalanie na 100 km: 10
+
+Koszt przejazdu Warszawa-Gdańsk to 304.50 PLN
