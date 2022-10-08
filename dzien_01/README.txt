@@ -227,3 +227,13 @@ print("poza ifem")
 
 napisz program, który pobierze od użytkownika rok urodzenia
 i wypisze czy użytkownik jest pełnoletni czy nie.
+
+### zadanie kalkulator
+
+
+Podaj pierwszą liczbę: 10
+Podaj drugą liczbę: 15
+Podaj rodzaj operacji: +
+
+Wynik: 15
+

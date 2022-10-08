@@ -23,3 +23,9 @@ if "":
     
 if x:
     print("X nie jest pusty ani nie jest zerem")
+    
+if x != 0:
+    print("X nie jest pusty ani nie jest zerem")
+    
+    
+actual_year = 2022
