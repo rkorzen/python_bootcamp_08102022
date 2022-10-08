@@ -237,3 +237,13 @@ Podaj rodzaj operacji: +
 
 Wynik: 15
 
+
+###
+
+Napisz program, który dla podanej pary liczb (x, y) wskaże 
+przybliżone położenie na planszy 100 x 100
+
+if 10 < x < 20
+
+=<  źle 
+<= >= ok
