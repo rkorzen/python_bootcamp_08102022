@@ -26,5 +26,5 @@ else:
     print("Centrum")
   
     
-fatal: unable to access 'https://github.com/KingArtuhr/python_bootcamp_08102022.git/': SSL certificate problem: self signed certificate in certificate chain 
+# fatal: unable to access 'https://github.com/KingArtuhr/python_bootcamp_08102022.git/': SSL certificate problem: self signed certificate in certificate chain
      

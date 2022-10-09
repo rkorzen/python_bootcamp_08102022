@@ -22,7 +22,7 @@ else:
     result = ("Nie "
     "znana operacja")
 
-    result = "Nie " \
-    "znana operacja"
+    # result = "Nie " \
+    # "znana operacja"
 
 print(f"Wynik to: {result}")
