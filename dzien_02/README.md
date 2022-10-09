@@ -82,6 +82,7 @@ Drukuj w pętli co drugą liczbę z zakresu 1-100
 3
 5
 
+W pętli drukuj z tego zakrsu tylko liczby podzielne przez 7
 
 ### Zadanie 3 while
 
