@@ -175,3 +175,37 @@ masz zadaną listę liczb - np [1, 2, 3, -1, -2, 10, 20, -400, 200, 24]
 
 Napisz program zliczający występienia liczb dodatnich i ujemnych
 
+
+## Wyrażenia listowe, generatorowe - przykład idiomu pythonowego
+
+
+```python
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+szesciany = []
+for el in x:
+    szesciany.append(el ** 3)
+
+szesciany2 = [el ** 3 for el in x]
+
+szesciany_liczb_parzystych = []
+for el in x:
+    if x % 2 == 0:
+        szesciany.append(el ** 3)
+
+szesciany_liczb_parzystych2= [el ** 3 for el in x if el % 2 == 0]
+
+
+      0  1  2  3  4
+      
+0     0  0  0  0  0
+1     0  1  2  3  4
+2     0  2  4  6  8
+....
+
+for i in range(10):
+    ...
+    for j in range(10):
+        ...
+    
+f{x:3}
