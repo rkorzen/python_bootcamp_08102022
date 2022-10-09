@@ -1,12 +1,21 @@
 import random
-
+# x = 1
+# assert x == 2
+#
+# print(__debug__)
+#
+#
+# print(10/0)
+# print(__name__)
 DEBUG = True
+DIM_X = 10
+DIM_Y = 10
 
-gracz_x = random.randint(1, 10)
-gracz_y = random.randint(1, 10)
+gracz_x = random.randint(1, DIM_X)
+gracz_y = random.randint(1, DIM_Y)
 
-skarb_x = random.randint(1, 10)
-skarb_y = random.randint(1, 10)
+skarb_x = random.randint(1, DIM_X)
+skarb_y = random.randint(1, DIM_Y)
 
 ruch_counter = 0
 
@@ -46,8 +55,8 @@ while True:
         break
 
     if ruch_counter > 2 * odleglosc_poczatkowa:
-        skarb_x = random.randint(1, 10)
-        skarb_y = random.randint(1, 10)
+        skarb_x = random.randint(1, DIM_X)
+        skarb_y = random.randint(1, DIM_Y)
         ruch_counter = 0
         odleglosc_poczatkowa = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
         print("Za długo błądzisz - skarb zmienił położenie")

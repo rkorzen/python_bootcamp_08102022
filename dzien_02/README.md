@@ -105,3 +105,56 @@ Dodatkowe modyfikacje:
 # SLACK -  zapisy
 
 https://docs.google.com/document/d/1DGIIznTFFGNaXmac0pXAiUndnY1DFUWN5hd_TJbfdec/edit?usp=sharing
+
+
+# Collections
+
+Ogólnie - wprowadzamy nawiasy []
+Pozwalają one wybierać z kolekcji określone elementy.
+
+Elementy te okresla się na dwa sposoby - index, klucz
+index - pozycja w kolekcji licznona liczbami calkowitymi od 0 w górę
+
+## Napisy
+
+"Ala ma kota"
+
+Typ niemutowalny
+
+Patrz kolekcje_przyklad.py
+
+
+## Tupla - krotka
+
+typ niemutowalny
+
+(1, 2, 3, "a")
+
+
+## lista
+
+[]
+
+[1, 2, 3, 2, 2, "a", 2.0]
+
+
+### Zadanie
+
+1. Utwórz tuple zawierająca 10 elemtów (mogą byc róznego typu)
+
+printy:
+- wybierz 2 element
+- przedostatni
+- od trzeciego do siódmego (włacznie)
+- co trzeci element
+- odwróć kolejnośc tupli
+
+2. utwórz napis i powtórz te kroki
+
+3. Utwórrz liste 10 elementowa
+
+- dołącz element do listy
+- wsadz nowy element przed 3 indexem
+- zmien wartosc na indeksie 5
+- zrzuć ostatnią wartość (pop)
+
