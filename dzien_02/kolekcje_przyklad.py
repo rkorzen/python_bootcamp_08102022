@@ -161,4 +161,6 @@ y = "ala ma kota kot ma ale"
 
 print(x is y)
 
+print(x[:1000])
+
 

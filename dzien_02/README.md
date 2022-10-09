@@ -153,8 +153,25 @@ printy:
 
 3. Utwórrz liste 10 elementowa
 
-- dołącz element do listy
-- wsadz nowy element przed 3 indexem
-- zmien wartosc na indeksie 5
-- zrzuć ostatnią wartość (pop)
+- dołącz element do listy                    # append
+- wsadz nowy element przed 3 indexem         # insert(3, "x")
+- zmien wartosc na indeksie 5                # lista[5] = 2
+- zrzuć ostatnią wartość (pop)               # lista.pop()
+
+
+
+### zadanie
+Napisz program obliczający średnią wartość z podanych przez użytkownika liczb.
+Użyj listy. Skorzystaj z funkcji: sum, len, min, max
+
+x = []
+
+x = list()
+
+
+### zadanie
+
+masz zadaną listę liczb - np [1, 2, 3, -1, -2, 10, 20, -400, 200, 24]
+
+Napisz program zliczający występienia liczb dodatnich i ujemnych
 
