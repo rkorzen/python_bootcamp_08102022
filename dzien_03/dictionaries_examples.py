@@ -62,3 +62,73 @@ try:
 except:
     litery["e"] = 0
 
+
+print(dir(litery))
+#  'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+print("keys", litery.keys())
+print("values", litery.values())
+print("items", litery.items())
+
+
+for klucz in litery:
+    print(klucz)
+
+
+sx = dict([('a', 1), ('b', 5), ('c', 1), ('e', 1)])
+print(sx)
+
+sy = dict(a=1, b=5, c=1, e=1)
+print(sy)
+
+# czy wszystko może by wartością i kluczem?
+# wartości - tak dowolne
+
+# klucze - obiekty hashowalne - z dużym przybliżeniem możemy uznac ze chodzi o obiekty niemutowalne
+
+
+d = {(1, 2): 1}
+
+# hash - "unikalna", stałą reprezentacja - wyliczana na podstawie zawartości.
+# rodzaj sumy kontrolnej.
+# stałe - w sensie życia sesji interpretera
+
+# klucze - unikalne, hashowalne
+
+print(help(dict.pop))
+
+klucze = [1, 2, 3]
+
+d = dict.fromkeys(klucze, 10)
+print(d)
+
+print(d.pop(1))
+print(d)
+
+print(d.popitem())
+print(d)
+
+
+for k, v in litery.items():
+    print(k, v)
+
+for k in litery:
+    print(k, litery[k])
+
+print(litery.items())
+
+
+# tworzenie
+s = dict()
+s = {1: "a", 2: "b"}
+
+# pobieranie
+s[1]
+# modyfikacja
+s[1] = "c"
+
+# usuwanie
+# s.pop(1)
+
+del s[1]
+print(s)
