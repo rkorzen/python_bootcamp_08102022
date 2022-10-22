@@ -35,3 +35,55 @@ ver dalsze.
 
 
 """
+
+ceny = {
+    "marchew": 2.5,
+    "cebula": 2.2,
+    "ziemniaki": 3.01
+}
+
+magazyn = {
+    "marchew": 5,
+    "cebula": 5,
+    "ziemniaki": 5
+}
+
+print("Witaj w naszym Warzywniaku!")
+
+while True:
+    tryb = input("Rodzaj pracy: m-magazyn, k-kasa, z-zakończ")
+    if tryb == "k":
+
+        print("Oferujemy: ")
+        print()
+
+        for pr, cena in ceny.items():
+            print(f" - {pr:30}: {cena:5.2f} PLN/kg")
+
+        koszt = 0
+        while True:
+            produkt = input("Co chcesz kupic? (Enter by zakończyc)")
+            if produkt == "":
+                break
+            waga = float(input(f"Ile chcesz kupic ({produkt}): "))
+
+            if waga > magazyn[produkt]:
+                print(f"Przepraszam mam tylko {magazyn[produkt]} kg {produkt}")
+            else:
+                koszt += waga * ceny[produkt]
+
+        if koszt:
+            print(f"Należy się: {koszt:.2f} PLN")
+        else:
+            print("Może innym razem ... ")
+    elif tryb == "m":
+        while True:
+            produkt = input("Co chcesz dodac? (Enter by zakonczyc dodawanie)")
+            if not produkt:
+                break
+            ile = int(input(f"Ile chces dodac {produkt}: "))
+            magazyn[produkt] += ile  #  powiekszenie stanu
+
+        print(magazyn)
+
+

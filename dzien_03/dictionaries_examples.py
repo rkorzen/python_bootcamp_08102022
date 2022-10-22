@@ -132,3 +132,7 @@ s[1] = "c"
 
 del s[1]
 print(s)
+
+
+slowo = {1: 0 or 1, "z": 2}
+print(slowo)
