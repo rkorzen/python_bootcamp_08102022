@@ -11,3 +11,4 @@ assert czy_pierwsza(10) is False
 assert czy_pierwsza(2) is True
 # assert czy_pierwsza(3) is True
 # assert czy_pierwsza(4) is False
+assert 3 % 2 == 1
