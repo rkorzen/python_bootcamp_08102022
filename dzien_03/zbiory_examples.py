@@ -58,3 +58,25 @@ range(2, 100) # od 2.. 99
 print(set(range(1, 100, 2))) # 1, 3.., 99
 print(len([1, 2, 3]))
 print(len(range(100)))
+
+
+x = frozenset([1,2 ,3])
+print(x)
+
+
+# wyrażenia listowe itp - idiomy pythonowe
+
+[x for x in range(100) if x % 3 == 0]
+
+lista = []
+for x in range(100):
+    if x % 3 == 0:
+        lista.append(x)
+
+
+print({x for x in range(100) if x % 3 == 0},
+      {x:x**2 for x in range(100) if x % 3 == 0})
+
+print((x for x in range(100) if x % 3 == 0))
+
+
