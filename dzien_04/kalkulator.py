@@ -1,3 +1,5 @@
+from typing import Union, Tuple
+
 """
 
 Napisz program, który będzie realizował proste działania matematyczne.
@@ -11,20 +13,49 @@ Wynik to: 5
 
 """
 
-def kalkulator() -> int:
-    # print("Jaką operację chcesz wykona? [1-dodaj, 2-odejmowanie, 3-mnożenie, 4-dzielenie]:")
+
+#
+
+# def return_dict() -> dict[str, int]:
+#     return {"a": 1}
+# def get_data() -> Tuple[str, int, int]: # < 3.10
+
+def get_data() -> tuple[str, int, int]:  # 3.10
     operacja = input("Jaką operację chcesz wykona? [1-dodaj, 2-odejmowanie, 3-mnożenie, 4-dzielenie]:")
     a = int(input("Podaj liczbę 1"))
     b = int(input("Podaj liczbę 2"))
+    return operacja, a, b
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+def sub(a: int, b: int) -> int:
+    return a - b
+
+def mul(a: int, b: int) -> int:
+    return a * b
+
+def div(a: int, b: int) -> int or str:
+    if b == 0:
+        return "Nie dziel przez zero"
+    return a / b
+
+
+# def kalkulator(operacja: str, a: int, b: int) -> Union[int, str]: # < 3.10
+def kalkulator(operacja: str, a: int, b: int) -> int or str:  # 3.10
+    # print("Jaką operację chcesz wykona? [1-dodaj, 2-odejmowanie, 3-mnożenie, 4-dzielenie]:")
+    wynik = "Nieokreślona operacja"
 
     if operacja == "1":
-        print(a + b)
+        wynik = add(a, b)
     elif operacja == "2":
-        print(a - b)
+        wynik = sub(a, b)
     elif operacja == "3":
-        print(a * b)
+        wynik = mul(a, b)
     elif operacja == "4":
-        print(a / b)
+        wynik = div(a, b)
+    return wynik
 
 
-kalkulator()
+# kalkulator(operacja, a, b)
+print(kalkulator("1", 3, 4))
