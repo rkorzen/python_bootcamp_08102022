@@ -19,6 +19,7 @@ def get_data() -> tuple[str, int, int]:  # 3.10
     return operacja, a, b
 
 
+
 def add(a: int, b: int) -> int:
     return a + b
 
