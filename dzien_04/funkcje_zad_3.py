@@ -30,19 +30,14 @@ Przykład użycia:
 
 def policz_znaki(napis: str, start: str = "<", end: str = ">") -> int:
     licznik = 0
-    czy_zliczac = False
     poziom = 0
     # 'ala ma <kota> a kot ma ale'
     for znak in napis:
         if znak == start:
-            czy_zliczac = True
             poziom += 1
             continue
         elif znak == end:
-            czy_zliczac = False
             poziom -= 1
-
-        if czy_zliczac:
-            licznik += poziom
-
+            continue
+        licznik += poziom
     return licznik
