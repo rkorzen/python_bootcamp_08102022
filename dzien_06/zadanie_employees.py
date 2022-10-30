@@ -35,7 +35,7 @@ class Employee:
         self.worked_hours = 0
 
     def __str__(self):
-        return f"<Employee: {self.first_name} {self.last_name} ({self.worked_hours})>"
+        return f"<Employee: {self.first_name} {self.last_name} ({self.rate_per_hour})>"
 
     def __repr__(self):
         return self.__str__()

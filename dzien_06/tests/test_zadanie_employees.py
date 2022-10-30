@@ -1,6 +1,8 @@
 import pytest
 
-from zadanie_employess import Employee, Biuro
+# import sys
+# sys.path.insert(0, "..")
+from zadanie_employees import Employee, Biuro
 
 
 @pytest.fixture
@@ -15,6 +17,8 @@ def biuro():
 
 def test_Employee_init(employee):
     assert employee
+    assert str(employee) == "<Employee: Jan Nowak (100.0)>"
+    assert repr(employee) == "<Employee: Jan Nowak (100.0)>"
     assert employee.rate_per_hour == 100.0
 
 
