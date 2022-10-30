@@ -39,12 +39,12 @@ def write_data_once(filename: str, data: list[str]):
         f.write(data)
 
 def main():
+    print("Działam")
     data = get_data("data/emails.txt")
     data = clean_data(data)
     write_data_once("data/cleaned_emails.txt", data)
 
-
-
 if __name__ == "__main__":
+    print(dir())
     main()
 
