@@ -1,0 +1,35 @@
+Hello world
+2.0
+2
+1
+16
+1
+False
+True
+True
+y większe
+x to jedynka
+x to prawda
+x to prawda - x na pewno jest wartością True
+True
+False
+False
+True
+4497585328 4497585328
+True
+----------------------------------------
+ <class 'str'>
+0 <class 'int'>
+Piwo 12.5 1
+None
+Piwo 12.5
+Piwo   
+
+    12.5
+Piwo cena:12.50 PLN ilosc: 1
+Piwo                           cena: 12.50 PLN ilosc: 1.000
+                          Piwo cena: 12.50 PLN ilosc: 1.000
+             Piwo              cena: 12.50 PLN ilosc: 1.000
+21
+j
+j
