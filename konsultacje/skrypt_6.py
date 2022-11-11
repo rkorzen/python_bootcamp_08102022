@@ -2,12 +2,27 @@ class Kwadrat:
     def __init__(self, bok):
         self.bok = bok
 
+    # kw.bok
+    @property
+    def bok(self):
+        return self._bok
+
+    # kw.bok = 10
+    @bok.setter
+    def bok(self, value):
+        if value < 0:
+            raise ValueError("Bok ma ujemna dlugosc!!")
+        self._bok = value
+
     def obwod(self):
-        return self.bok * 4
+        return self._bok * 4
     #           kw1   kw2
     def __add__(self, other):
         return Kwadrat(bok=self.bok + other.bok)
 
+kw0 = Kwadrat(3)
+kw0.bok = -3
+print(kw0.obwod())
 
 kw1 = Kwadrat(3)
 kw2 = Kwadrat(4)
