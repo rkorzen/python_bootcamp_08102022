@@ -5,7 +5,9 @@ def suma():
     a_value = float(a.get())
     b_value = float(b.get())
     if b_value == 0:
-        messagebox.showerror("Dzielenie przez 0!!!", "Zmień b")
+        # messagebox.showerror("Dzielenie przez 0!!!", "Zmień b")
+        wynik.configure(text=f"Błąd!")
+        return
     wynik.configure(text=f"{a_value / b_value}")
 
 

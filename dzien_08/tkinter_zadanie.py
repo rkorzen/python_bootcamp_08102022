@@ -6,3 +6,7 @@ spalania samochodu oraz ceny paliwa.
 Skorzystaj z modułu tkinter.
 
 """
+
+import tkinter
+
+root = tkinter
