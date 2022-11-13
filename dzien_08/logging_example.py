@@ -1,10 +1,9 @@
 import logging
-import os
 
 logging.basicConfig(
     level=logging.DEBUG,
     filename="xxx.log",
-    format="%(asctime)s %(levelname)-8s %(name)-15s %(message)s'"
+    format="%(asctime)s %(levelname)-8s %(name)-15s %(message)s'",
 )
 
 logging.debug("To jest debug")
