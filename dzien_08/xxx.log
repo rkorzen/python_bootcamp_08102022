@@ -1,0 +1,129 @@
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:Dzielenie przez zero
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 12, in <module>
+    1 / 0
+ZeroDivisionError: division by zero
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 12, in <module>
+    1 / 0
+ZeroDivisionError: division by zero
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:division by zero
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 16, in <module>
+    logging.error(e, stack_info=True)
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 14, in <module>
+    x / y
+ZeroDivisionError: division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 16, in <module>
+    logging.error(e, stack_info=True, exc_info=True)
+DEBUG:root:To jest debug
+INFO:root:To jest debug
+WARNING:root:To jest debug
+ERROR:root:To jest debug
+CRITICAL:root:To jest debug
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 14, in <module>
+    x / y
+ZeroDivisionError: division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 16, in <module>
+    logging.error(e, stack_info=True, exc_info=True)
+ERROR:root:x=1, y=0
+2022-11-13 14:18:58,402 DEBUG    root            To jest debug'
+2022-11-13 14:18:58,403 INFO     root            To jest debug'
+2022-11-13 14:18:58,403 WARNING  root            To jest debug'
+2022-11-13 14:18:58,403 ERROR    root            To jest debug'
+2022-11-13 14:18:58,403 CRITICAL root            To jest debug'
+2022-11-13 14:18:58,403 ERROR    root            division by zero'
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 18, in <module>
+    x / y
+ZeroDivisionError: division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 20, in <module>
+    logging.error(e, stack_info=True, exc_info=True)
+2022-11-13 14:18:58,403 ERROR    root            x=1, y=0'
+2022-11-13 14:21:04,772 DEBUG    root            To jest debug'
+2022-11-13 14:21:04,773 INFO     root            To jest debug'
+2022-11-13 14:21:04,773 WARNING  root            To jest debug'
+2022-11-13 14:21:04,773 ERROR    root            To jest debug'
+2022-11-13 14:21:04,773 CRITICAL root            To jest debug'
+2022-11-13 14:21:04,773 ERROR    root            division by zero'
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 18, in <module>
+    x / y
+ZeroDivisionError: division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 20, in <module>
+    logging.error(e, stack_info=True, exc_info=True)
+2022-11-13 14:21:04,774 ERROR    root            x=1, y=0'
+2022-11-13 14:36:24,812 DEBUG    root            To jest debug'
+2022-11-13 14:36:24,813 INFO     root            To jest debug'
+2022-11-13 14:36:24,813 WARNING  root            To jest debug'
+2022-11-13 14:36:24,813 ERROR    root            To jest debug'
+2022-11-13 14:36:24,813 CRITICAL root            To jest debug'
+2022-11-13 14:36:24,813 ERROR    root            division by zero'
+Traceback (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 19, in <module>
+    x / y
+ZeroDivisionError: division by zero
+Stack (most recent call last):
+  File "/Users/rkorzen/PycharmProjects/szkolenia/python_bootcamp_08102022/dzien_08/logging_example.py", line 21, in <module>
+    logging.error(e, stack_info=True, exc_info=True)
+2022-11-13 14:36:24,813 ERROR    root            x=1, y=0'
