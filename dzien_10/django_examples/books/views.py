@@ -10,7 +10,7 @@ def books_list(request):
     books = Book.objects.all()
     return render(
         request,
-        'books.html',
+        'books/books.html',
         {
             "books": books
         }
@@ -22,7 +22,7 @@ def book_details(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     return render(
         request,
-        'book_details.html',
+        'books/book_details.html',
         {
             "book": book
         }
