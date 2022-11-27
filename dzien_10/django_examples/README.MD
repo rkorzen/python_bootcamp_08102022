@@ -57,3 +57,21 @@ uruchamiamy:
     Book.objects.get(title__iexact="pan tadeusz")
     Book.objects.filter(title__iendswith="tadeusz")
 
+## Panel Admina
+
+### tworzenie uzytkownika
+
+    python manage.py createsuperuser
+
+
+
+
+Ankiety:
+
+
+Nauka programowania w Pythonie - stacjonarni:
+https://www.alx.pl/ankiety/5142dgcw
+
+
+Nauka programowania w Pythonie - zdalni:
+https://www.alx.pl/ankiety/5141pkqw
