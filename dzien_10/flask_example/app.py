@@ -18,12 +18,12 @@ def hello_world():
 
 @app.route("/books/")
 def books_list():
-    books_list = [f"<li><a href='/books/{i}'>{book}</li>" for i, book in enumerate(books, start=1)]
+    # books_list = [f"<li><a href='/books/{i}'>{book}</li>" for i, book in enumerate(books, start=1)]
+    #
+    # response = f"""
+    # <ul>
+    # {' '.join(books_list)}
+    # </ul>
+    # """
 
-    response = f"""
-    <ul>
-    {' '.join(books_list)}
-    </ul>
-    """
-
-    return response
+    return render_template("books.html", books=books)
