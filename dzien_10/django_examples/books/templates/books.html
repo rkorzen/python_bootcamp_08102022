@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} Lista {% endblock %}
+
+{% block content %}
+
+<ul>
+  {% for book in books %}
+    <li><a href='/books/{{ forloop.counter }}'>{{book.title}}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
+

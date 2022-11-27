@@ -21,6 +21,7 @@ from django.urls import path, include
 def test_view(request):
     return HttpResponse("Testowy widok")
 
+# /
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("test/", test_view),

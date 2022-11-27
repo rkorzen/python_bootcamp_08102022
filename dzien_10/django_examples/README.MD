@@ -33,3 +33,27 @@ uruchamiamy:
 
 
 
+## Migracje
+
+### wykonanie:
+
+    python manage.py migrate
+
+### utworzenie migracji:
+
+    python manage.py makemigrations
+
+### podejrzenie stanu wykonania
+
+    python manage.py showmigrations
+
+## Query
+
+    Book.objects.all()
+    Book.objects.first()
+    Book.objects.last()
+    Book.objects.get(id=1)
+    Book.objects.get(title="Pan Tadeusz")
+    Book.objects.get(title__iexact="pan tadeusz")
+    Book.objects.filter(title__iendswith="tadeusz")
+
