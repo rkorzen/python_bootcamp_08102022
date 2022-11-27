@@ -1,8 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
+from dataclasses import dataclass
 
 app = Flask(__name__)
 
-books = ["Pan Tadeusz", "Krzyżacy"]
+
+@dataclass
+class Book:
+    title: str
+    author: str
+    desc: str
+
+
+b1 = Book("Krzyżacy", "Henryk Sienkiewcz", "Zmagania ze złym komturem")
+b2 = Book("Pan Tadeusz", "Adam Mickiewicz", "Epopeja narodowa")
+
+books = [b1, b2]
 
 
 @app.route("/")
@@ -18,12 +30,17 @@ def hello_world():
 
 @app.route("/books/")
 def books_list():
-    # books_list = [f"<li><a href='/books/{i}'>{book}</li>" for i, book in enumerate(books, start=1)]
-    #
-    # response = f"""
-    # <ul>
-    # {' '.join(books_list)}
-    # </ul>
-    # """
-
     return render_template("books.html", books=books)
+
+
+@app.route("/books/<int:book_id>")
+def book_details(book_id):
+    try:
+        book = books[book_id - 1]
+    except IndexError:
+        abort(404)
+
+    return render_template(
+        "book_details.html",
+        book=book
+    )
